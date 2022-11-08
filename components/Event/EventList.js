@@ -1,4 +1,4 @@
-import EventItem from './Item';
+import EventItem from './EventItem';
 import styles from './styles.module.css';
 export default function EventList({ items }) {
   return (
