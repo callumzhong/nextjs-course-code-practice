@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './styles.module.css';
 
 export default function EventItem({
   title,
@@ -7,6 +8,7 @@ export default function EventItem({
   location,
   id,
 }) {
+  console.log(styles);
   const humanReadableDate = new Date(
     date,
   ).toLocaleDateString('en-US', {
@@ -19,9 +21,9 @@ export default function EventItem({
   const exploreLink = `/events/${id}`;
 
   return (
-    <li>
+    <li className={styles.item}>
       <img src={'/' + image} alt={title} />
-      <div>
+      <div className={styles.content}>
         <h2>{title}</h2>
         <div>
           <time>{humanReadableDate}</time>
@@ -29,9 +31,9 @@ export default function EventItem({
         <div>
           <address>{formattedAddress}</address>
         </div>
-      </div>
-      <div>
-        <Link href={exploreLink}>Explore Event</Link>
+        <div className={styles.actions}>
+          <Link href={exploreLink}>Explore Event</Link>
+        </div>
       </div>
     </li>
   );
