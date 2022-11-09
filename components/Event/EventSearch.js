@@ -1,6 +1,8 @@
 import Button from '../UI/Button';
 import classes from './EventSearch.module.css';
 export default function EventSearch(props) {
+  const clickHandler = () => {};
+
   return (
     <form className={classes.form}>
       <div className={classes.controls}>
