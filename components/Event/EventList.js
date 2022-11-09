@@ -1,5 +1,5 @@
 import EventItem from './EventItem';
-import styles from './styles.module.css';
+import styles from './EventList.module.css';
 export default function EventList({ items }) {
   return (
     <ul className={styles.list}>

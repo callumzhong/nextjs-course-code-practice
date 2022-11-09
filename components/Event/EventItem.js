@@ -2,7 +2,7 @@ import AddressIcon from '../Icons/AddressIcon';
 import ArrowRightIcon from '../Icons/ArrowRightIcon';
 import DateIcon from '../Icons/DateIcon';
 import Button from '../UI/Button';
-import styles from './styles.module.css';
+import styles from './EventItem.module.css';
 
 export default function EventItem({
   title,
