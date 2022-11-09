@@ -9,15 +9,7 @@ import { getEventById } from '../../data/dummy-data';
 function EventDetailPage() {
   const router = useRouter();
   const { eventId } = router.query;
-  console.log(
-    '🚀 ~ file: [eventId].js ~ line 12 ~ EventDetailPage ~ eventId',
-    eventId,
-  );
   const event = getEventById(eventId);
-  console.log(
-    '🚀 ~ file: [eventId].js ~ line 14 ~ EventDetailPage ~ event',
-    event,
-  );
 
   if (!event) {
     return <p>No event found!</p>;
